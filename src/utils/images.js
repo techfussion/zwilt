@@ -34,9 +34,13 @@ import stayInLoopImg from '@/assets/images/stay-in-loop.png';
 import barPurple from '@/assets/bar-purple.svg';
 import barYellow from '@/assets/bar-yellow.svg';
 import barGreen from '@/assets/bar-green.svg';
+import profileIcon from '@/assets/profile-icon.svg';
+import windowIcon from '@/assets/window-icon.svg';
 
 
 export {
+    profileIcon,
+    windowIcon,
     barPurple,
     barYellow,
     barGreen,

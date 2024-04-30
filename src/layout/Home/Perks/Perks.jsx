@@ -30,7 +30,7 @@ const Perks = () => {
                     <span>Learn More</span>
                 </div>
             </div>
-            <img src={onboardCardImg} alt="" />
+            <img src={onboardCardImg} alt=""  loading='lazy'/>
         </div>
         <div className="card">
             <div className="cardContent">
@@ -45,7 +45,7 @@ const Perks = () => {
                     <span>Learn More</span>
                 </div>
             </div>
-            <img src={messageImg} alt="" />
+            <img src={messageImg} alt=""  loading='lazy'/>
         </div>
         <div className="card">
             <div className="cardContent">
@@ -60,7 +60,7 @@ const Perks = () => {
                     <span>Learn More</span>
                 </div>
             </div>
-            <img src={stayInLoopImg} alt="" />
+            <img src={stayInLoopImg} alt=""  loading='lazy'/>
         </div>
       </div>
     </section>

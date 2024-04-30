@@ -13,6 +13,8 @@ import {
     illustratorIcon,
     unrealEngineIcon,
     cinema4dIcon,
+    profileIcon,
+    windowIcon,
 } from '@/utils/images.js';
 import './Explore.scss';
 
@@ -29,20 +31,20 @@ const Explore = () => {
                         <div>
                             <div>
                                 <p><img src={starBadge} alt=""/>989 Skills</p>
-                                <p><img src={starBadge} alt=""/>45 Sub-Categories</p>
+                                <p><img src={windowIcon} alt=""/>45 Sub-Categories</p>
                             </div>
-                            <p><img src={starBadge} alt=""/>1011 Profiles</p>
+                            <p><img src={profileIcon} alt=""/>1011 Profiles</p>
                         </div>
                     </div>
                     <div className='serviceStack'>
                         <p>IT & Development</p>
                         <ul>
-                            {/* <li className='icon'><img src={shopifyIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={magentoIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={dataIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={webflowIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={dotnetIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon rect'><img src={arrowRight} alt=''/></li> */}
+                            <li className='icon'><img src={shopifyIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={magentoIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={dataIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={webflowIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={dotnetIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon rect'><img src={arrowRight} alt='' loading='lazy'/></li>
                         </ul>
                     </div>
                 </div>
@@ -52,26 +54,26 @@ const Explore = () => {
                         <div>
                             <div>
                                 <p><img src={starBadge} alt=""/>989 Skills</p>
-                                <p><img src={starBadge} alt=""/>45 Sub-Categories</p>
+                                <p><img src={windowIcon} alt=""/>45 Sub-Categories</p>
                             </div>
-                            <p><img src={starBadge} alt=""/>1011 Profiles</p>
+                            <p><img src={profileIcon} alt=""/>1011 Profiles</p>
                         </div>
                     </div>
                     <div className='serviceStack'>
                         <p>Design & Creative</p>
                         <ul>
-                            {/* <li className='icon rect'><img src={arrowLeft} alt=''/></li>
-                            <li className='icon'><img src={figmaIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={photoshopIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={illustratorIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={unrealEngineIcon} alt=''/><span>Shopify <br/> Developer</span></li>
-                            <li className='icon'><img src={cinema4dIcon} alt=''/><span>Shopify <br/> Developer</span></li> */}
+                            <li className='icon rect'><img src={arrowLeft} alt=''/></li>
+                            <li className='icon'><img src={figmaIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={photoshopIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={illustratorIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={unrealEngineIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
+                            <li className='icon'><img src={cinema4dIcon} alt='' loading='lazy'/><span>Shopify <br/> Developer</span></li>
                         </ul>
                     </div>
                 </div>
                 <div className='bottomControl'>
                     <ul>
-                        <li className='icon rect'><img src={arrowRightWhite} alt=''/><span>Explore more</span></li>
+                        <li className='icon rect'><img src={arrowRightWhite} alt='' loading='lazy'/><span>Explore more</span></li>
                         <li className='count'><span>30 more</span> to explore</li>
                     </ul>
                 </div>
