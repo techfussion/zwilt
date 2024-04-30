@@ -27,6 +27,7 @@
       align-items: center;
       margin-bottom: 3rem;
       text-align: left;
+      gap: 20px;
 
       > .serviceStatsCont {
         > h4 {
@@ -56,45 +57,6 @@
         }
         }
       }
-
-      .serviceStack {
-        background-color: var(--background-color-light);
-        border-radius: 0.5em;
-        padding: 0.6em 1em;
-        max-width: 60%;
-
-        ul {
-          display: flex;
-          justify-content: space-between;
-
-          .icon {
-            text-align: center;
-            margin: 0 1em;
-            font-size: 13px;
-
-            &.rect {
-              img {
-                border-radius: 2rem;
-                padding: 2rem;
-                width: 1.5rem;
-                height: 1.5rem;
-              }
-            }
-
-            img {
-              padding: 1.6rem;
-              width: 2.5rem;
-              height: 2.5rem;
-              background-color: rgba(61, 61, 67, 0.11);
-              border-radius: 50%;
-            }
-
-            span {
-              margin-top: 0.6rem;
-            }
-          }
-        }
-      }
     }
 
     .bottomControl {
@@ -113,7 +75,8 @@
           img {
             background-color: var(--background-color-dark);
             padding: 2.3rem 2rem;
-            border-radius: 2rem;
+            width: 1rem;
+            border-radius: 1.4rem;
           }
 
           span {
@@ -144,15 +107,20 @@
       padding: 0 2rem;
 
       > h2 {
-        font-size: 5vw;
+        font-size: 2rem;
         margin: 2rem auto 4rem;
       }
 
       > .wrapper {
         flex-direction: column;
         margin-bottom: 2rem;
+        margin-top: 2rem;
 
         > .serviceStatsCont {
+          &:last-child {
+            justify-content: left;
+          }
+        
           > h4 {
             font-size: 4vw;
             margin-bottom: 1rem;
@@ -161,6 +129,10 @@
           div {
             > div {
               margin-right: 0;
+            }
+
+            p {
+                font-size: .8em;
             }
           }
         }
@@ -188,16 +160,17 @@
         ul {
           .icon {
             img {
-              padding: 1.6rem 1.5rem;
+              padding: 1rem 1rem;
+              border-radius: 1.2rem;
             }
 
             span {
-              font-size: 16px;
+              font-size: .8em;
             }
           }
 
           .count {
-            font-size: 16px;
+            font-size: .8em;
           }
         }
       }
