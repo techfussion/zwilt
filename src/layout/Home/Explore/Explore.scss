@@ -143,7 +143,7 @@
       padding: 0 5rem;
 
       > h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 2rem auto 4rem;
       }
 
@@ -153,21 +153,11 @@
         margin-top: 2rem;
         align-items: initial;
 
-        &.wrap2{
-            align-items: flex-end;
-
-            > .serviceStatsCont {
-                > h4 {
-                    width: 100%;
-                }
-            }
-        }
-
         > .serviceStatsCont {
           > h4 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
-            width: 50%;
+            width: 70%;
           }
 
           div {
@@ -176,20 +166,22 @@
             }
 
             p {
-                font-size: .8em;
+                font-size: .9em;
             }
           }
         }
 
         .serviceStack {
-          padding: 0.6em 0.5em;
-          max-width: max-content;
+          margin-top: 2rem;
+          padding: 0.6em 1em;
 
           p {
-            font-size: .9em;
+            font-size: 1em;
           }
 
           ul {
+            gap: 0;
+            justify-content: space-between;
             .icon {
               margin: 0 0.5em;
               font-size: 10px;
