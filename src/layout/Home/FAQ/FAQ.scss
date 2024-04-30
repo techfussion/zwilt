@@ -40,7 +40,7 @@
                     border-right: 1px solid var(--border-color);
                     padding: 2em 3em;
                     height: 100%;
-                    font-size: 1.4vw;
+                    font-size: 1.3rem;
 
                     &.active {
                         background-color: var(--border-color);
@@ -51,7 +51,7 @@
                     flex: 1;
                     padding: 2em 0;
                     margin: 0;
-                    font-size: 1.3vw;
+                    font-size: 1.2rem;
                     font-weight: 500;
                     color: var(--text-color-grey-2)
                 }
@@ -75,12 +75,12 @@
                 .faqGroup {
                     .faqGroupSubHeading {
                         padding: 2em 2em;
-                        font-size: .8em;
+                        font-size: 1em;
                     }
 
                     .faqItem {
                         padding: 2em 0;
-                        font-size: .8em;
+                        font-size: 1em;
                     }
 
                     &.active {
@@ -88,6 +88,26 @@
                             width: 1em;
                             height: 1em;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .faqSection {
+        > div {
+            > div {
+                >.faqGroup {
+                    >.faqGroupSubHeading {
+                        padding: 2em 1em;
+                        font-size: .8em;
+                    }
+
+                    .faqItem {
+                        padding: 2em 0;
+                        font-size: .8em;
                     }
                 }
             }
