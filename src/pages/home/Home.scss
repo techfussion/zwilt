@@ -144,3 +144,13 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .landingViewPort { 
+        > div {  
+            .introParagraph {
+                font-size: .9rem;
+            }
+        }
+    }
+}

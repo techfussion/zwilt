@@ -19,6 +19,15 @@
     }
 }
 
+@media screen and (max-width: 1100px){
+    .searchForm {
+        .searchButton {
+            width: 24%;
+        }
+    }
+       
+}
+
 @media screen and (max-width: 768px) {
     .searchForm {
         width: 80%;
