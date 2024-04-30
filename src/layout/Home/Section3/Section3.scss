@@ -1,0 +1,182 @@
+.section3 {
+    background-color: var(--background-color-dark-2);
+    transform: skewY(-3deg);
+    padding: 5rem 0 8rem;
+    display: flex;
+
+    > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    > div {
+        transform: skewY(3deg);
+        width: 100%;
+        color: var(--primary-white);
+        display: flex;
+        padding: 8rem 5rem 6rem 5rem;
+        justify-content: space-between;
+
+        .flex1 {
+            width: 40%;
+
+            h3 {
+                font-size: 4vw;
+                line-height: 1em;
+                margin-bottom: 3rem;
+
+                >img {
+                    &.jason {
+                        width: 2.5vw;
+                        height: 2.5vw;
+                        margin-left: .3em;
+                    }
+                    &.groove {
+                        width: 10vw;
+                        margin-top: .5em;
+                    }
+                    
+                }
+            }
+            p {
+                color: var( --text-color-light);
+                font-size: 1.4vw;
+                width: 80%;
+            }
+            div {
+                display: flex;
+                gap: 1rem;
+                margin-top: 3rem;
+
+                img {
+                    width: 1.5vw;
+                    height: 1.5vw;
+                    padding: 1.5rem;
+                    border-radius: 1.5rem;
+                    background-color: var(--primary-white);
+                }
+            }
+        }
+        .flex2 {
+            width: 40%;
+
+            div {
+                display: flex;
+                align-items: center;
+                margin: 3rem 0 2rem;
+
+                img {
+                    height: 4vw;
+                    width: 4vw;
+                    padding: 1rem;
+                    background-color: #af7cff;
+                    border-radius: 2.5rem;
+                    margin-right: 1rem;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h4 {
+                        font-size: 2vw;
+                    }
+                    h5 {
+                        color: var(--text-color-lighter);
+                        font-size: 1vw;
+                    }
+                }
+            }
+            p {
+                color: var( --text-color-light);
+                font-size: 1.4vw;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section3 {
+        padding: 5rem 2rem 4rem;
+        flex-direction: column;
+
+        > img {
+            transform: skewY(3deg);
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+        > div {
+            transform: skewY(3deg);
+            padding: 6rem 0 6rem;
+            flex-direction: column;
+            gap: 2rem;
+
+            .flex1 {
+                width: 100%;
+
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+
+                    >img {
+                        &.jason {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin-left: .3em;
+                        }
+                        &.groove {
+                            width: 7rem;
+                            margin-top: .5em;
+                        }
+                    }
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
+                div {
+                    gap: 1rem;
+
+                    img {
+                        width: 1rem;
+                        height: 1rem;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        background-color: var(--primary-white);
+                    }
+                }
+            }
+            .flex2 {
+                width: 100%;
+
+                div {
+                    margin: 2rem 0 1rem;
+                    justify-content: flex-end;
+
+                    img {
+                        height: 3rem;
+                        width: 3rem;
+                        padding: 1rem;
+                        background-color: #af7cff;
+                        border-radius: 2rem;
+                        margin-right: 1rem;
+                    }
+                    div {
+                        h4 {
+                            font-size: 7vw;
+                        }
+                        h5 {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                p {
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.landingViewPort {
+    min-height: 100vh;
+    background-image: url('@/assets/images/Rectangle.png');
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        .introHeading {
+            font-size: 4.5vw;
+            color: var(--background-color-dark-2);
+            line-height: 1em;
+            margin-top: 2rem;
+
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        .introParagraph {
+            font-size: 1.7vw;
+            margin: 3rem 0 4rem;
+            color: var(--text-color-grey-3);
+        }
+
+        .tabComponent {
+            background-color: var(--background-color-light-2);
+            margin-top: 2rem;
+            width: 60%;
+            border-radius: .7em;
+            padding: .7em 4em 1.5em 4em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .navTabs {
+                display: flex;
+                padding:0;
+
+                .navItem {
+                    .navLink {
+                        padding: 1em 2em;
+
+                        &.active {
+                            position: relative;
+                            background-color: var(--primary-green);
+                            z-index: 1;
+                        }
+                    }
+
+                    margin: -.6em;
+                }
+            }
+
+            .tabContent {
+                margin-top: 1rem;
+
+                .tabPane {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 6px;
+
+                    .paneItem {
+                        flex: 1 0 calc(30% - 10px);
+                        margin: 0;
+                        width: max-content;
+                        text-align: left;
+                        font-weight: 500;
+                        color: var(--text-color-grey-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    > div {
+        > img{
+            width: 100%;
+        }
+        @media screen and (max-width: 768px){
+            zoom: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .landingViewPort {
+        padding: 1rem;
+        
+        > div {  
+            .introHeading {
+                font-size: 2rem;
+                color: var(--background-color-dark-2);
+                margin-top: 3rem;
+
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+            .introParagraph {
+                font-size: 1.2rem ;
+                color: var(--text-color-grey-3);
+                margin: 1.5rem 0 2rem;
+            }
+
+            .tabComponent {
+                background-color: var(--background-color-light-2);
+                margin: 2rem;
+                padding: .7em .7em 2em;
+                width: 95%;
+
+                .navTabs {
+                    .navItem {
+                        .navLink {
+                            padding: .7em 2em;
+                            font-size: .8rem;
+                            border-radius: .7em;
+                        }
+                    }
+                }
+
+                .tabContent {
+                    .tabPane {
+                        gap: 1rem;
+
+                        .paneItem {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
