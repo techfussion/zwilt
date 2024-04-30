@@ -43,9 +43,11 @@ header {
             
         }
         .hamburger {
-            height: 1.5rem;
-            width: 1.5rem;
-            margin: auto;
+            height: 2rem;
+            width: 2rem;
+            margin: auto 0;
+            background-color: var(--text-color-lighter);
+            border-radius: 50%;
         }
     }
 }  
