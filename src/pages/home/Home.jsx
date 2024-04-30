@@ -59,7 +59,7 @@ const Home = () => {
                 <div>
                     <img src={StripImage} alt=''/>
                 </div>
-                <Explore />
+                {/* <Explore /> */}
                 <Section3 />
                 <Process />
                 <JoinUs />
