@@ -1,23 +1,10 @@
 import Button from "@/components/button/Button";
 import zwiltArrow from "@/assets/logo-yellow.svg";
 import './Header.scss';
-import { useLayoutEffect, useState } from "react";
+import useWindowWidthObserver from "@/hooks/useWindowWidthObserver";
 
 const Header = () => {
-    const [shouldShowHamburger, setShouldShowHamburger] = useState(false);
-
-    useLayoutEffect(() => {
-        const updateHamburger = () => {
-            if (window.innerWidth < 780) {
-                setShouldShowHamburger(true);
-            } else {
-                setShouldShowHamburger(false);
-            }
-        }
-        window.addEventListener('resize', updateHamburger);
-        updateHamburger();
-        return () => window.removeEventListener('resize', updateHamburger);
-    }, []);
+    const shouldShowHamburger = useWindowWidthObserver(768);
 
     return (
     <header>
