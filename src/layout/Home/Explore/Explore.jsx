@@ -48,7 +48,7 @@ const Explore = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='wrapper'>
+                <div className='wrapper wrap2'>
                     <div className='serviceStatsCont'>
                         <h4>Find Dev and IT professional to scale your business</h4>
                         <div>
