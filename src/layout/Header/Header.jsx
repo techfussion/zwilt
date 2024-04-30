@@ -4,7 +4,7 @@ import './Header.scss';
 import useWindowWidthObserver from "@/hooks/useWindowWidthObserver";
 
 const Header = () => {
-    const shouldShowHamburger = useWindowWidthObserver(768);
+    const shouldShowHamburger = useWindowWidthObserver(800);
 
     return (
     <header>
