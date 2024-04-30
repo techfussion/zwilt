@@ -1,0 +1,96 @@
+.faqSection {
+    background-color: var(--background-color-light);
+    transform: skewY(-3deg);
+    padding: 4rem 0 8rem;
+    display: flex;
+
+    > div {
+        transform: skewY(3deg);
+        width: 100%;
+        text-align: center;
+
+        > h2 {
+        font-size: 3.5vw;
+        margin: 4rem 0;
+        }
+
+        > div {
+            width: 100%;
+
+            .faqGroup {
+                display: flex;
+                border-top: 1px solid var(--border-color);
+                border-bottom: 1px solid var(--border-color);
+                align-items: center;
+
+                &.active {
+                    background-color: var(--border-color);
+
+                    .faqItem {
+                        color: black;
+                        font-weight: bold;
+                    }
+
+                    > img{
+                        margin-right: 1rem;
+                    }
+                }
+
+                .faqGroupSubHeading {
+                    border-right: 1px solid var(--border-color);
+                    padding: 2em 3em;
+                    height: 100%;
+                    font-size: 1.4vw;
+
+                    &.active {
+                        background-color: var(--border-color);
+                    }
+                }
+                
+                .faqItem {
+                    flex: 1;
+                    padding: 2em 0;
+                    margin: 0;
+                    font-size: 1.3vw;
+                    font-weight: 500;
+                    color: var(--text-color-grey-2)
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .faqSection {
+        padding: 2rem 0 5rem;
+
+        > div {
+            > h2 {
+                font-size: 2rem;
+                padding: 0 .5rem;
+            }
+
+            > div {
+                .faqGroup {
+                    .faqGroupSubHeading {
+                        padding: 2em 2em;
+                        font-size: .8em;
+                    }
+
+                    .faqItem {
+                        padding: 2em 0;
+                        font-size: .8em;
+                    }
+
+                    &.active {
+                        img {
+                            width: 1em;
+                            height: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

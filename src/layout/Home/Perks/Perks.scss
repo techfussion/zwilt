@@ -1,0 +1,157 @@
+.perkSection {
+    transform: skewY(-3deg);
+    background: var(--background-color-linear);
+    padding: 10rem 0 5rem 0rem;
+
+    > div {
+        display: flex;
+        transform: skewY(3deg);
+        overflow-x: scroll;
+        align-items: center;
+
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+          
+        &::-webkit-scrollbar-track {
+            background: var(--background-color-3);
+            border-radius: 6px;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+          
+        &::-webkit-scrollbar-thumb {
+            background: var(--background-color-dark-2);
+            border-radius: 6px;
+        }
+
+        .intro {
+            flex-shrink: 0;
+            margin: 0 3rem 0 5rem;
+            margin-bottom: 4rem;
+
+            h3 {
+                font-size: 3.5vw;
+                color: var(--background-color-dark-2);
+                margin-bottom: 2rem;
+                line-height: 1em;
+            }
+            p {
+                font-size: 1.7vw;
+                color: var(--text-color-grey-2);
+            }
+        }
+
+        .card {
+            display: flex;
+            flex-shrink: 0;
+            background-color: var(--primary-white);
+            margin: 0 2rem 7rem 0;
+            padding: 2rem 2rem 0 2rem;
+            border-radius: 1rem;
+            align-items: center;
+
+            .cardContent {
+                h3 {
+                    font-size: 3.5vw;
+                    color: var(--background-color-dark-2);
+                    line-height: 1em;
+                }
+
+                ul {
+                    margin: 2rem 0 2rem 2rem;
+
+                    &.onboardList {
+                        list-style-image: url('@/assets/bar-purple.svg');
+                    }
+                    &.messageList {
+                        list-style: url('@/assets/bar-yellow.svg');
+                    }
+                    &.trackList {
+                        list-style: url('@/assets/bar-green.svg');
+                    }
+
+                    li {
+                        font-size: 1.6vw;
+                        color: var(--text-color-3);
+                    }
+                }
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    font-size: 17px;
+
+                    img {
+                        border-radius: 1.4rem;
+                        padding: 1rem;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        background-color: black;
+                        margin-right: 1rem;
+                    }
+                    span {
+                        font-weight: bold;
+                        color: var(--text-color-3);
+                        font-size: 1.2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .perkSection {
+        padding: 8rem 0 5rem 0rem;
+
+        > div {
+
+            .intro {
+                margin: 0 2rem;
+
+                h3 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .card {
+                margin-bottom: 3rem;
+                
+
+                .cardContent {
+                    h3 {
+                        font-size: 2rem;
+                    }
+
+                    ul {
+                        margin: 2rem 0 2rem 2rem;
+
+                        li {
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .icon {
+                        font-size: 17px;
+
+                        img {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            margin-right: 1rem;
+                        }
+                        span {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+                > img {
+                    height: 60vh;
+                }
+            }
+        }
+    }
+}

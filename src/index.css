@@ -1,0 +1,84 @@
+/* light theme */
+:root.light-theme {
+  --background-color-linear: linear-gradient(to bottom,  rgb(131,131,132), rgb(206, 207, 219));
+  --background-color-dark: #000;
+  --background-color-dark-2: #202229;
+  --background-color-light: #fff;
+  --background-color-light-2: #f2f2f2;
+  --background-color-grey: #808080;
+  --background-color-grey-2: #333333;
+  --background-color-3: #edefff;
+  --primary-yellow: #FFBE2E;
+  --primary-white: #fff;
+  --primary-green: #C8EFC4;
+  --text-color-black: #000000;
+  --text-color-lighter: #f3f3f35c;
+  --text-color-light: rgba(243, 243, 243, 0.54);
+  --text-color-3: #28292a;
+  --text-color-grey: #f2f2f2;
+  --text-color-grey-2: #1313138f;
+  --text-color-grey-3: #131313b0;
+  --primary-green: #C8EFC4;
+  --border-color: #56565629;
+  --linear-border: linear-gradient(to right, grey, rgb(101, 100, 100), #202229);
+}
+
+/* dark theme */
+:root.dark-theme {
+  --background-color-linear: linear-gradient(to bottom,  rgb(131,131,132), rgb(206, 207, 219));
+  --background-color-dark: #000;
+  --background-color-dark-2: #202229;
+  --background-color-light: #fff;
+  --background-color-light-2: #f2f2f2;
+  --background-color-grey: #808080;
+  --background-color-grey-2: #333333;
+  --background-color-3: #edefff;
+  --primary-yellow: #FFBE2E;
+  --primary-white: #fff;
+  --text-color-black: #000000;
+  --text-color-lighter: #f3f3f35c;
+  --text-color-light: rgba(243, 243, 243, 0.54);
+  --text-color-3: #28292a;
+  --text-color-grey: #f2f2f2db;
+  --text-color-grey-2: #1313138f;
+  --text-color-grey-3: #131313b0;
+  --primary-green: #C8EFC4;
+  --border-color: #56565629;
+  --linear-border: linear-gradient(to right, grey, rgb(101, 100, 100), black);
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color-grey);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+
+

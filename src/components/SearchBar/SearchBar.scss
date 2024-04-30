@@ -1,0 +1,35 @@
+.searchForm {
+    width: 40%;
+    display: flex;
+    padding: .1em;
+    background-color: var(--background-color-light);
+    border-radius: .5em;
+
+    .searchInput {
+        width: 90%;
+        border: none;
+        margin: 1.3em 0 1.3em 1.8em;
+        outline: none;
+    }
+    .searchButton {
+        width: 10%;
+        height: auto;
+        background-color: var(--primary-yellow);
+        border-radius: .4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .searchForm {
+        width: 80%;
+
+        .searchButton{
+            width: 20%;
+
+            img {
+                width: 1.2em;
+                height: 1.2em;
+            }
+        }
+    }
+}

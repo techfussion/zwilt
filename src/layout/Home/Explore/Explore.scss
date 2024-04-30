@@ -1,0 +1,180 @@
+.exploreSection {
+    background-color: var(--background-color-3);
+    transform: skewY(-3deg);
+    padding: 4rem 0 8rem;
+    display: flex;
+
+    > div {
+        transform: skewY(3deg);
+        width: 100%;
+        text-align: center;
+        padding: 0 5rem;
+
+        > h2 {
+            font-size: 2.3em;
+            font-weight: 100;
+            margin: 4rem 0;
+            font-style: italic;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            text-align: left;
+            
+            .serviceStatsCont {
+                width: 30%;
+                > h4 {
+                    font-size: 1.2em;
+                }
+
+                ul {
+                    display: flex;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            padding-right: 7px;
+                        }
+                    }
+                }
+            }
+
+            .serviceStack {
+                background-color: var(--background-color-light);
+                border-radius: .5em;
+                padding: .6em 1em;
+                max-width: 60%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .icon {
+                        text-align: center;
+                        margin: 0 1em;
+                        font-size: 13px;
+
+                        &.rect {
+                            img {
+                                border-radius: 2rem;
+                                padding: 2rem;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                        }
+
+                        img {
+                            padding: 1.6rem;
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            background-color: rgba(61, 61, 67, 0.11);
+                            border-radius: 50%;
+                        }
+
+                        span {
+                            margin-top: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottomControl {
+            display: flex;
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    
+                    img {
+                        background-color: var(--background-color-dark);
+                        padding: 2.3rem 2rem;
+                        border-radius: 2rem;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        margin-left: 10px;
+                        font-weight: 600;
+                    }
+                }
+
+                .count {
+                    flex: 1;
+                    font-size: 20px;
+                    
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .exploreSection {
+        padding: 2rem 0 4rem;
+        flex-direction: column;
+
+        > div {
+            padding: 0 2rem;
+
+            > h2 {
+                font-size: 2em;
+                margin: 2rem 0;
+            }
+
+            > .wrapper {
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                .serviceStatsCont {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                > .serviceStack {
+                    max-width: 100%;
+
+                    > ul {
+                        > .icon {
+                            margin: 0;
+                            > img {
+                                width: 2rem;
+                                height: 2rem;
+                                padding: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottomControl {
+                ul {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .icon {
+                        margin-bottom: 1rem;
+                        
+                        img {
+                            width: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
