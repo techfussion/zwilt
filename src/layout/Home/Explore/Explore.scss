@@ -69,6 +69,7 @@
         ul {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           gap: 1rem;
 
           .icon {
@@ -76,12 +77,12 @@
             text-align: center;
             flex-direction: column;
             gap: 0.5vw;
+            align-items: center;
             
-            &.rect {
+            & .rect {
                 border-radius: 1rem;
             }
             
-
             img {
               width: 2.5vw;
               height: 2.5vw;
@@ -89,8 +90,6 @@
               border-radius: 50%;
               background-color: var(--background-color-light-2);
             }
-            
-
           }
         }
         }
@@ -220,6 +219,82 @@
 
           .count {
             font-size: .9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .exploreSection {
+    > div {
+      padding: 0 2rem;
+
+      > h2 {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+      > .wrapper {
+        &.wrap2{
+            align-items: flex-start;
+        }
+
+        > .serviceStatsCont {
+          > h4 {
+            font-size: 1.2rem;
+            width: 100%;
+          }
+
+          div {
+            > div {
+              margin-right: 0;
+            }
+
+            p {
+                font-size: .8em;
+            }
+            margin-bottom: 1rem;
+          }
+        }
+
+        .serviceStack {
+          p {
+            font-size: .9em;
+          }
+
+          ul {
+            flex-wrap: wrap;
+            .icon {
+              margin: 0 0.5em;
+              font-size: 10px;
+              flex-basis: calc(33% - 2em);
+              img {
+                padding: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      .bottomControl {
+        ul {
+          .icon {
+            img {
+              padding: .8rem .8rem;
+              border-radius: .8rem;
+            }
+
+            span {
+              font-size: .8em;
+            }
+          }
+
+          .count {
+            font-size: .8em;
           }
         }
       }
