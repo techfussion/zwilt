@@ -36,9 +36,11 @@ import barYellow from '@/assets/bar-yellow.svg';
 import barGreen from '@/assets/bar-green.svg';
 import profileIcon from '@/assets/profile-icon.svg';
 import windowIcon from '@/assets/window-icon.svg';
+import expandImg from '@/assets/images/arrow-down.png';
 
 
 export {
+    expandImg,
     profileIcon,
     windowIcon,
     barPurple,

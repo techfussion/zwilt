@@ -1,5 +1,6 @@
 import Button from "@/components/button/Button";
 import zwiltArrow from "@/assets/logo-yellow.svg";
+import { expandImg } from "@/utils/images";
 import './Header.scss';
 import useWindowWidthObserver from "@/hooks/useWindowWidthObserver";
 
@@ -21,7 +22,7 @@ const Header = () => {
                     <li className='navItem'><a href="#">Contact Us</a></li>
                 </ul>
                 :
-                <img src={zwiltArrow} alt="" className="hamburger"/>
+                <img src={expandImg} alt="" className="hamburger"/>
             }
             <ul className='navList'>
                 <li className='navItem'><a href="#">Log In</a></li>
