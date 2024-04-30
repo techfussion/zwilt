@@ -84,7 +84,79 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1124px) {
+    .joinUsSection {
+        .skewed {
+            height: 30vw;
+
+            > div {
+                padding: 2rem 0 1rem 0;
+
+                .number {
+                    margin: 2rem 1rem auto 1rem;
+                }
+                > div {
+                    h4 {
+                        font-size: 1.8rem;
+                        max-width: 60%;
+                    }
+                    p {
+                        font-size: 1rem;
+                        max-width: 70%;
+                    }
+                    .icon {
+                        img {
+                            width: .8rem;
+                            height: .8rem;
+                            padding: .7rem;
+                            border-radius: .8rem;
+                        }
+                    }
+                }
+            }
+
+            &.skew3 {
+                > img {
+                    width: calc(100% / 1.8);
+                }
+            }
+
+            > img {
+                width: calc(100% / 2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .joinUsSection {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .skewed {
+            &.skew3 {
+                > img {
+                    width: calc(100% / 1.9);
+                }
+
+                > div {
+                    > div {
+                        p {
+                            max-width: 65%;
+                        }
+                    }
+                }
+            }
+
+            > img {
+                width: calc(100% / 2.1);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
     .joinUsSection {
         padding: 5rem 1rem 0;
 
@@ -111,7 +183,7 @@
                     }
                     p {
                         font-size: 1rem;
-                        max-width: 90%;
+                        max-width: 90% !important;
                     }
                     .icon {
                         font-size: 10px;
@@ -133,6 +205,7 @@
             > img {
                 top: 8px;
                 position: relative;
+                width: initial !important;
             }
         }
     }
