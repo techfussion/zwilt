@@ -31,7 +31,7 @@
         }
 
         .tabComponent {
-            background-color: var(--background-color-light-2);
+            background-color: var(--background-color-light);
             margin-top: 2rem;
             width: 60%;
             border-radius: .7em;
@@ -47,7 +47,8 @@
                 .navItem {
                     .navLink {
                         padding: 1em 2em;
-                        color: var(--text-color-dark-2);
+                        color: var(--text-color-grey-2);
+                        background-color: var(--background-color-light-2);
 
                         &.active {
                             position: relative;
