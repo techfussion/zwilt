@@ -1,5 +1,8 @@
 # Zwilt - React + Vite
 
+## Project implementation overview
+   [View on Google docs](https://docs.google.com/document/d/1yXEec4kWIbLmnWr_on8JZbr8BlUjI5UyVyyGOtBe72E/edit?usp=sharing)
+
 ## Overview
 
 Zwilt is a job search platform that connects job seekers with employers, providing a streamlined experience for finding employment opportunities.
@@ -12,8 +15,6 @@ Zwilt is a job search platform that connects job seekers with employers, providi
 - Includes ESLint rules for maintaining code quality.
 
 ## Getting Started
-
-To use this template, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install dependencies using npm or yarn:
